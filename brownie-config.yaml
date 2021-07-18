@@ -1,0 +1,27 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.2.0
+
+ 
+
+
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.2.0"
+  
+
+
+deployed:
+  SwappyGanacheCLI: "0x3194cBDC3dbcd3E11a07892e7bA5c3394048Cc87"
+  SwappyMatic: "0x7788a3C351eB3D1Ac9B382E52F64Ac4DaAAf7393"
+
+
+networks:
+    mainnet-fork:
+        gas_limit: max
+        gas_buffer: 1
+        gas_price: 5
+        reverting_tx_gas_limit: max
+        default_contract_owner: true
+
+    
