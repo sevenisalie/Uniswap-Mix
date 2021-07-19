@@ -7,4 +7,4 @@ def main():
     router = "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F" #sushi mainnet router
     dev = accounts.add(os.getenv("PRIVATE_KEY"))
     forkeddev = accounts.at('0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0bE', force=True)
-    Arbitrage.deploy(factory, router, {'from': dev})
+    Arbitrage.deploy(factory, router, {'from': forkeddev})

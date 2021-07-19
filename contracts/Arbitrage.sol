@@ -54,7 +54,8 @@ contract Arbitrage {
         path[1] = _amount0 == 0 ? token0 : token1;
 
         //security
-        require(msg.sender == UniswapV2Library.pairFor(FACTORY, token0, token1), "Caller is Not the Pair Address, Please Use Pair address");
+        address pair = IUniswapV2Factory(FACTORY).getPair(token0, token1);
+        require(msg.sender == pair, "Caller is Not the Pair Address, Please Use Pair address");
         require(_amount0 == 0 || _amount1 == 0, "One token amount must be 0");
 
         //approve spending of token borrowed.  remember path0 logic entails taht will always be the one we borrowed
