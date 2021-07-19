@@ -4,11 +4,8 @@ import "../interfaces/IUniswapV2Pair.sol";
 import "../interfaces/IERC20.sol";
 import "../interfaces/IUniswapV2Router.sol";
 import "../interfaces/IUniswapV2Factory.sol";
+import "../interfaces/IUniswapV2Callee.sol";
 
-
-interface IUniswapV2Callee {
-  function uniswapV2Call(address sender, uint amount0, uint amount1, bytes calldata data) external;
-}
 
 contract FlashSwap is IUniswapV2Callee{
 
