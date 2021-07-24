@@ -69,13 +69,10 @@ contract Arbitrage {
 
         uint amountRequired = UniswapV2Library.getAmountsIn(FACTORY, amountTokenBorrowed, path)[0];
 
-        uint amountReceived = ROUTER.swapExactTokensForTokens(amountTokenBorrowed, amountRequired, path, msg.sender, deadline)[1];
+        uint amountReceived = ROUTER.swapExactTokensForTokens(amountTokenBorrowed, amountRequired, path, address(this), deadline)[1];
 
         //handle fee profitability security
         uint take = amountRequired - amountReceived;
-        require(
-            take > 0, "Unprofitable with trade fee of 0.3%"
-        );
 
         //now we need to handle repayment.  at this point we have used the borrowed funds to buy the cheaper Token,
         //we now need to return that cheaper token back to the original Factory, and thus repay our loan
