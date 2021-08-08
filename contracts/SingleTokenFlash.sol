@@ -64,6 +64,13 @@ contract FlashSwap is IUniswapV2Callee{
 
         // Do STUFF HERE LIKE REALLY COOL STUFF.
         // well just log for now
+
+        //crossed market (factory to short on aka asset borrowed is priced more expensive on thsi factory so sellit)
+      
+
+
+
+
         emit Log("amount to borrow ", amount);
         emit Log("amount0 ", _amount0);
         emit Log("amount1 ", _amount1);

@@ -10,6 +10,13 @@ compiler:
       - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.2.0"
   
 
+Tokens:
+  USDC_DINO_LP: "0x3324af8417844e70b81555A6D1568d78f4D4Bf1f"
+  DINO: "0xAa9654BECca45B5BDFA5ac646c939C62b527D394"
+  WMATIC: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
+  USDC: "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"
+
+
 
 deployed:
   SwappyGanacheCLI: "0x3194cBDC3dbcd3E11a07892e7bA5c3394048Cc87"
@@ -20,6 +27,14 @@ deployed:
   ArbitrageApetoQuick: "0x4cFC1Bf2C3b64510C0347Bd8e51673EFBc11E927"
   ArbitrageApetoSushi: "0x14499c0983A3a188cf9C494C6366F7FA385D807e"
   RegularSwap: "0x374c3dFA10d61E36BbBBfb7759FBe88c93ef895d"
+
+  ChefSwap: "0x1afa102D2112d7cEce579f246953F9D8C04Bc75F"
+
+  QuickSwapV2Router: "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff"
+  QuickswapV2Factory: "0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32"
+  SushiSwapV2Router: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506"
+  DinoSwapMasterChef: "0x1948abC5400Aa1d72223882958Da3bec643fb4E5"
+
   
 
 

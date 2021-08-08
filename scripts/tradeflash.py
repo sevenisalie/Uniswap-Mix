@@ -13,7 +13,7 @@ def main(deployedSwapContract, version):
     whalesignature = accounts.at('0x3f5CE5FBFe3E9af3971dD833D26bA9b5C936f0bE', force=True)
     dev = accounts.add(os.getenv("PRIVATE_KEY"))
 
-    tokenborrow = mFISH
+    tokenborrow = WMATIC
     amount = 25 * 1e18
     fee = int((amount * 0.003)) + 1
     totalamountapprove = amount + fee +2

@@ -14,4 +14,10 @@ interface IERC20 {
     function approve(address spender, uint value) external returns (bool);
     function transfer(address to, uint value) external returns (bool);
     function transferFrom(address from, address to, uint value) external returns (bool);
+
+    function safeTransferFrom(address from, address to, uint value) external returns (bool);
+    function safeTransfer(address to, uint value) external returns (bool);
+    function safeApprove(address spender, uint value) external returns (bool);
+    function safeIncreaseAllowance(address spender, uint value) external returns (bool);
+    function safeDecreaseAllowance(address spender, uint value) external returns (bool);
 }
